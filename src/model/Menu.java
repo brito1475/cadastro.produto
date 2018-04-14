@@ -12,7 +12,7 @@ public class Menu {
 	static Scanner ler = new Scanner(System.in);
 	
 	public static void painel(){
-		System.out.println("MENU \n"+"1 Cadastrar Produto \n"+"2 Imprimir \n"+"3 Sair");
+		System.out.println("MENU \n1 Cadastrar Produto \n2 Imprimir \n3 Sair");
 		valor = ler.nextInt();
 	}
 	
@@ -20,7 +20,7 @@ public class Menu {
 		String nome = JOptionPane.showInputDialog("Informe nome do Produto");
 		try{
 		Integer quantidade = Integer.parseInt(JOptionPane.showInputDialog("Quantidade"));
-		Float valorP = Float.parseFloat(JOptionPane.showInputDialog("PreÁo"));
+		Float valorP = Float.parseFloat(JOptionPane.showInputDialog("Pre√ßo"));
 		float multiplicar = quantidade*valorP;
 		
 		Produto produto = new Produto();
@@ -32,7 +32,7 @@ public class Menu {
 		
 		produtos.add(produto);
 		}catch(java.lang.NumberFormatException erro){
-			JOptionPane.showMessageDialog(null,"Valor no campo Inv·lido");
+			JOptionPane.showMessageDialog(null,"Valor no campo Inv√°lido");
 			painel();
 		}
 	}
@@ -57,7 +57,7 @@ public class Menu {
 			}else if(valor==3){
 				break;
 			}else if(valor>=4){
-				JOptionPane.showMessageDialog(null,"Numero inv·lido ");
+				JOptionPane.showMessageDialog(null,"Numero inv√°lido ");
 				painel();
 			}
 		}
