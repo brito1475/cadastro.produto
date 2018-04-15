@@ -41,7 +41,6 @@ public class Menu {
 			System.out.println("Nome: "+p.getNome()+", Quant.: "+p.getQuant()+", Valor: "+p.getTotal()+" R$: "+p.getPrecoF());
 		}
 	} 
-
 	
 	public static void main(String[]args){
 	
